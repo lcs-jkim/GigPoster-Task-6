@@ -107,6 +107,10 @@ canvas.drawText(message: "thursday", at: Point(x: -80, y: -345), size: 10, kerni
 canvas.drawText(message: "june 13 1996 / 8:30", at: Point(x: -80, y: -360), size: 10, kerning: 0)
 canvas.drawText(message: "no age limit", at: Point(x: -80, y: -375), size: 10, kerning: 0)
 
+canvas.drawText(message: "at brick by brick", at: Point(x: 100, y: -345), size: 10, kerning: 0)
+canvas.drawText(message: "1130 buenos avenue", at: Point(x: 100, y: -360), size: 10, kerning: 0)
+canvas.drawText(message: "san diego, ca", at: Point(x: 100, y: -375), size: 10, kerning: 0)
+
 
 
 
