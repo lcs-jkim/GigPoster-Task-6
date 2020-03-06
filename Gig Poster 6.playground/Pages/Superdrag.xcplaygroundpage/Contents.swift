@@ -44,7 +44,13 @@ let translucentPink = Color(hue: 325, saturation: 100, brightness: 81, alpha: 75
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
+canvas.drawShapesWithFill = true
+canvas.drawShapesWithBorders = true
 
+// Create background
+canvas.fillColor = lightBlue
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
 /*:
