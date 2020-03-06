@@ -84,13 +84,13 @@ canvas.drawEllipse(at: Point(x: 0, y: 100), width: 15, height: 15)
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
 canvas.borderColor = translucentPink
-canvas.defaultBorderWidth = 13
+canvas.defaultBorderWidth = 14
 
 // Same loop as before that increases the width and height of elipse for lots of circles
 
-for size2 in stride(from: 2, to: 400, by: 48) {
+for size2 in stride(from: 0, to: 400, by: 48) {
     
-    canvas.drawEllipse(at: Point(x: 0, y: 0 + 100), width: size2, height: size2) 
+    canvas.drawEllipse(at: Point(x: 0, y: 0 + 100), width: size2, height: size2)
 }
 
 /*:
