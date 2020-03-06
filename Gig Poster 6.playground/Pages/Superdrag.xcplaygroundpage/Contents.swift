@@ -64,7 +64,7 @@ canvas.defaultBorderWidth = 13
 
 // Create loop that increases the width and height of the elipse to make lots of circles
 
-for size in stride(from: 3, to: 400, by: 48) {
+for size in stride(from: 2, to: 400, by: 48) {
 
 canvas.drawEllipse(at: Point(x: 0, y: 0), width: size, height: size)
 }
