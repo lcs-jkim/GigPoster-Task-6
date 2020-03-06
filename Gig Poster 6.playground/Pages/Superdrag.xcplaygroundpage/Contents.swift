@@ -53,11 +53,16 @@ canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 // Now to create the white circles
-canvas.drawShapesWithFill = false
-
 // Change the axis point
 canvas.translate(to: Point(x: 200, y: 400))
-canvas.drawAxes()
+canvas.drawAxes() // To show axes
+
+//use thicc border to create first dot
+canvas.drawShapesWithFill = false
+canvas.borderColor = offWhite
+canvas.defaultBorderWidth = 20
+
+canvas.drawEllipse(at: Point(x: 0, y: 0), width: 1, height: 1)
 
 /*:
  ## Use Source Control
