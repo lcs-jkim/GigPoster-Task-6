@@ -95,12 +95,18 @@ for size2 in stride(from: 0, to: 400, by: 48) {
 
 // Title text
 canvas.textColor = Color.black
-canvas.drawText(message: "superdrag", at: Point(x: -180, y: -315), size: 50, kerning: 0)
+canvas.drawText(message: "superdrag", at: Point(x: -180, y: -318), size: 55, kerning: 0)
 
 // Subtext #1
 canvas.drawText(message: "with", at: Point(x: -180, y: -345), size: 10, kerning: 0)
 canvas.drawText(message: "the shambles", at: Point(x: -180, y: -360), size: 10, kerning: 0)
 canvas.drawText(message: "and lifter", at: Point(x: -180, y: -375), size: 10, kerning: 0)
+
+// Subtext #2
+canvas.drawText(message: "thursday", at: Point(x: -80, y: -345), size: 10, kerning: 0)
+canvas.drawText(message: "june 13 1996 / 8:30", at: Point(x: -80, y: -360), size: 10, kerning: 0)
+canvas.drawText(message: "no age limit", at: Point(x: -80, y: -375), size: 10, kerning: 0)
+
 
 
 
