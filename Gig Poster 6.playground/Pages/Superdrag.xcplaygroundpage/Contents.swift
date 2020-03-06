@@ -44,6 +44,7 @@ let translucentPink = Color(hue: 325, saturation: 100, brightness: 81, alpha: 75
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
+
 canvas.drawShapesWithFill = true
 canvas.drawShapesWithBorders = true
 
@@ -74,12 +75,9 @@ for size in stride(from: 2, to: 400, by: 48) {
 canvas.drawEllipse(at: Point(x: 0, y: 0), width: size, height: size)
 }
 
-// Now to create the pink circles
+// Now to create the inner pink circle
 canvas.borderColor = translucentPink
 
-// Change the axes point for the new circles
-canvas.translate(to: Point(x: 200, y: 500))
-canvas.drawAxes()
 /*:
  ## Use Source Control
  
