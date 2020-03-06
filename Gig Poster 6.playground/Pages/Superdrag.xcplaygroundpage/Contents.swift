@@ -44,7 +44,6 @@ let translucentPink = Color(hue: 325, saturation: 100, brightness: 81, alpha: 75
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
-
 canvas.drawShapesWithFill = true
 canvas.drawShapesWithBorders = true
 
@@ -76,8 +75,18 @@ canvas.drawEllipse(at: Point(x: 0, y: 0), width: size, height: size)
 }
 
 // Now to create the inner pink circle
-canvas.borderColor = translucentPink
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = translucentPink
+canvas.drawEllipse(at: Point(x: 0, y: 100), width: 15, height: 15)
 
+// Use thicc border for pink circles
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.borderColor = translucentPink
+canvas.defaultBorderWidth = 13
+
+// Same loop as before that increases the width and height of elipse for lots of circles
 /*:
  ## Use Source Control
  
