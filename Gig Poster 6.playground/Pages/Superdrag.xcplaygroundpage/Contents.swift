@@ -57,13 +57,17 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 canvas.translate(to: Point(x: 200, y: 400))
 canvas.drawAxes() // To show axes
 
-//use thicc border to create first dot
+// Use thicc border to create first dot
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
-canvas.defaultBorderWidth = 20
+canvas.defaultBorderWidth = 3
 
-canvas.drawEllipse(at: Point(x: 0, y: 0), width: 1, height: 1)
+// Create loop that increases the width and height of the elipse to make lots of circles
 
+for size in stride(from: 3, to: 400, by: 400/33) {
+
+canvas.drawEllipse(at: Point(x: 0, y: 0), width: size, height: size)
+}
 /*:
  ## Use Source Control
  
