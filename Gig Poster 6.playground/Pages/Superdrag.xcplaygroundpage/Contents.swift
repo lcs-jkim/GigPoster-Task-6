@@ -52,12 +52,17 @@ canvas.fillColor = lightBlue
 
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-// Now to create the white circles
 // Change the axis point
 canvas.translate(to: Point(x: 200, y: 400))
 
+// Now to create the inner white circle
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = offWhite
+canvas.drawEllipse(at: Point(x: 0, y: 0), width: 15, height: 15)
 
 // Use thicc border to create white circles
+canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
 canvas.defaultBorderWidth = 13
