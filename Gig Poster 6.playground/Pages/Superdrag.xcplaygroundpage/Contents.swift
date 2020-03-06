@@ -60,11 +60,11 @@ canvas.drawAxes() // To show axes
 // Use thicc border to create first dot
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
-canvas.defaultBorderWidth = 3
+canvas.defaultBorderWidth = 13
 
 // Create loop that increases the width and height of the elipse to make lots of circles
 
-for size in stride(from: 3, to: 400, by: 400/33) {
+for size in stride(from: 3, to: 400, by: 48) {
 
 canvas.drawEllipse(at: Point(x: 0, y: 0), width: size, height: size)
 }
