@@ -93,6 +93,10 @@ for size2 in stride(from: 0, to: 400, by: 48) {
     canvas.drawEllipse(at: Point(x: 0, y: 0 + 100), width: size2, height: size2)
 }
 
+// Title text
+canvas.textColor = Color.black
+canvas.drawText(message: "superdrag", at: Point(x: -180, y: -325), size: 50, kerning: 0)
+
 /*:
  ## Use Source Control
  
