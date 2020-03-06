@@ -55,9 +55,9 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 // Now to create the white circles
 // Change the axis point
 canvas.translate(to: Point(x: 200, y: 400))
-canvas.drawAxes() // To show axes
 
-// Use thicc border to create first dot
+
+// Use thicc border to create white circles
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
 canvas.defaultBorderWidth = 13
@@ -68,6 +68,13 @@ for size in stride(from: 2, to: 400, by: 48) {
 
 canvas.drawEllipse(at: Point(x: 0, y: 0), width: size, height: size)
 }
+
+// Now to create the pink circles
+canvas.borderColor = translucentPink
+
+// Change the axes point for the new circles
+canvas.translate(to: Point(x: 200, y: 500))
+canvas.drawAxes()
 /*:
  ## Use Source Control
  
