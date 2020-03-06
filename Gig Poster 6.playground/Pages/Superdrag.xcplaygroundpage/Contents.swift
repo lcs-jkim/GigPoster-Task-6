@@ -87,6 +87,12 @@ canvas.borderColor = translucentPink
 canvas.defaultBorderWidth = 13
 
 // Same loop as before that increases the width and height of elipse for lots of circles
+
+for size2 in stride(from: 2, to: 400, by: 48) {
+    
+    canvas.drawEllipse(at: Point(x: 0, y: 0 + 100), width: size2, height: size2) 
+}
+
 /*:
  ## Use Source Control
  
